@@ -21,7 +21,7 @@ Ao iniciar o projeto vai estar rodando na porta http://127.0.0.1:8000/. Para rod
 python manage.py runserver
 ```
 
-📦 Detalhes do Projeto
+##📦 Detalhes do Projeto
 
 A API implementada simula um sistema de pedidos, onde:
 * Para realizar um pedido o usuário precisa estar cadastrado.
@@ -31,6 +31,8 @@ A API implementada simula um sistema de pedidos, onde:
 * O usuário deve fornecer nome e data de nascimento para realizar cadastro.
 * A senha é opcional, no caso de ausência uma aleatório será atribuída.
 * O admin pode consultar os usuários cadastrados, e baixar a lista como xlsx (arquivo de planilha).
+
+### Observação: O admin do projeto esta registrado com {login: admin} e {senha: 1234}
 
 ## 🛠️ Construído com
 * [Anaconda 4.11.0](https://www.anaconda.com/)
