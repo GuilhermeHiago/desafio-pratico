@@ -21,7 +21,7 @@ Ao iniciar o projeto vai estar rodando na porta http://127.0.0.1:8000/. Para rod
 python manage.py runserver
 ```
 
-##📦 Detalhes do Projeto
+## 📦 Detalhes do Projeto
 
 A API implementada simula um sistema de pedidos, onde:
 * Para realizar um pedido o usuário precisa estar cadastrado.
