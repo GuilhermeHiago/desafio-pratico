@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Django Rest API{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        {% if user.is_staff %}
+        <details>
+            <summary>Admin Panel</summary>
+                <ul>
+                    <li>You can access admin panel <a href="{% url 'admin:index' %}">here</a>.</li>
+                </ul>
+        </details>
+        {% endif %}
+        <details>
+            <summary>Order Api Actions</summary>
+                <ul>
+                    <li>Add orders <a href="{% url 'order-list' %}">here</a>.</li>
+                    <li>Delete orders <a href="{% url 'order-delete' pk=1 %}">here</a>.</li>
+                    <li>Update orders <a href="{% url 'order-update' pk=1 %}">here</a>.</li>
+                </ul>
+        </details>
+    {% endif %}
+{% endblock %}
